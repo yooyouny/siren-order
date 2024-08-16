@@ -47,7 +47,8 @@ public class StoreService {
   }
 
   @Transactional
-  public void updateStore(Long storeId, StoreUpdateRequest storeUpdateRequest) {
+  public void updateStore(
+      Long storeId, StoreUpdateRequest storeUpdateRequest) {
     Store store =
         storeRepository
             .findByStoreId(storeId)
